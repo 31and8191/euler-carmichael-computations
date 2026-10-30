@@ -1,0 +1,9 @@
+Lambda = 21135380689073344813801776180934848000 (124 bits), primes [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73]
+n has 8667018 prime factors; backend gmpy2; jobs 24
+  [ok] all 8667018 factors prime (strong probable-prime)
+  [ok] Carmichael: squarefree, >=3 factors, (p-1)|Lambda, n == 1 (mod Lambda)
+  v_2(n-1) = 14, max_p v_2(p-1) = 8  ->  class A
+
+  Euler liar for the first 90968 prime bases (largest liar prime base: 1172819).
+  No witness among the first 90968 prime bases (increase --max-base to locate the boundary).
+  (n = 537697499 bits; skipped literal modexp cross-check, --modexp-limit 700000)

@@ -1,0 +1,16 @@
+# Cython / build artifacts
+build/
+*.so
+pdc/_match.c
+*.egg-info/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated factor text files. The compressed 90,968-base factor list is
+# included under data/; small examples are under tests/fixtures/.
+record_flat_bases.txt
+record_flat_euler_bases.txt
+euler_floor1300000.txt

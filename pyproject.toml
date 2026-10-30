@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel", "Cython>=3.0", "numpy>=1.20"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdc-carmichael"
+version = "0.1.0"
+description = "Modern re-implementation of Algorithm 1 (Many Carmichaels subset-product) from Alford-Grantham-Hayman-Shallue 2014"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.20"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "gmpy2>=2.1"]
+# Optional GMP-backed modular exponentiation for prime generation (~9x on the proof's
+# modexp at paper-scale Lambda). The package runs without it (pure-Python fallback).
+fast = ["gmpy2>=2.1"]
+
+[project.scripts]
+pdc = "pdc.cli:main"
+
+[tool.setuptools]
+packages = ["pdc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
